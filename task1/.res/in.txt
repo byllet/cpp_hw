@@ -1,0 +1,23 @@
+createUser 1 us1
+
+linkUserGroup 1 0
+
+createUser 1 user1
+
+createGroup 2
+
+linkUserGroup 1 2
+
+allGroups
+
+createUser 100 user100
+
+createUser 444 user444
+
+linkUserGroup 444 2
+
+createGroup 666
+
+linkUserGroup 444 666
+
+allGroups

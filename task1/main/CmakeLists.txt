@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.15)
+project(task1)
+
+set(SOURCES
+        App.cpp
+)
+
+set(HEADERS 
+        App.hpp
+)
+
+add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
+
+target_link_libraries(${PROJECT_NAME}
+                      PRIVATE
+                      UserGroupLib
+)
